@@ -6,13 +6,14 @@ import time from "../images/time.svg"
 import brief from "../images/case.svg"
 import creates from "../images/create.svg"
 import plus from "../images/plus.svg"
+import { Switch } from "./Switch"
  
 const BidSideNavContainer = styled.div`
     width: 440px;
     background: #000;
     min-height: 80vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     position: relative;
@@ -82,6 +83,7 @@ const Bar = styled.div`
 export const BidSideNav: React.FC = () =>{
     return(
         <BidSideNavContainer>
+            <Switch />
             <CategoryInfoDiv>
                 <SectionTitle>My Categories</SectionTitle>
                 <SectionText>
